@@ -8,7 +8,9 @@
    - Service Usage Consumer
 1. Download a serivce account key JSON file.
 1. Switch to an old version of `firebase-tools`
-   - I'm using 13.4.0 for this since it's the version prior https://github.com/firebase/firebase-tools/issues/6801
+   - I'm using 13.4.0 for this since it's the version prior https://github.com/firebase/firebase-tools/pull/6836
+1. Run `firebase logout`
+   - Make sure that you're using the service account to authenticate
 1. Run `export GOOGLE_APPLICATION_CREDENTIALS=<path_to_json_key>`
 1. Run `firebase deploy --project project_id`
    - Deploys without any issues
